@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'me.frankusmiruk'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url 'https://papermc.io/repo/repository/maven-public/'
+    }
+
+    maven {
+        url 'https://jitpack.io/'
+    }
+}
+
+dependencies {
+    implementation 'com.destroystokyo.paper:paper-api:1.15.2-R0.1-SNAPSHOT'
+    implementation 'com.github.SkriptLang:Skript:2.5-alpha3'
+}
